@@ -1,5 +1,5 @@
 {% set name = "semi-ate-master-app" %}
-{% set version = "1.0.9" %}
+{% set version = "1.0.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-master-app-{{ version }}.tar.gz
-  sha256: e42c6bc3b998656386f0d4018ef2a4d6d81a878cc4cf4afe6eabe47353a30344
+  sha256: 426b2518053d2f12ed7f111fead4b35c4af72e33aaeacdf0fbe9825d388de162
 
 build:
   number: 0
@@ -34,6 +34,7 @@ test:
   imports:
     - ate_master_app
     - ate_master_app.execution_strategy
+    
   commands:
     - pip check
     - launch_master --help
@@ -49,4 +50,3 @@ about:
 extra:
   recipe-maintainers:
     - nerohmot
-    
