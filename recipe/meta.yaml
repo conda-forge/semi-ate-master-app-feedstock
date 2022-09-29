@@ -29,7 +29,7 @@ requirements:
     - semi-ate-plugins
     - transitions
     - xmltodict
-
+    - pydantic
 test:
   imports:
     - ate_master_app
