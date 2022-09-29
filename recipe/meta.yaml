@@ -1,5 +1,5 @@
 {% set name = "semi-ate-master-app" %}
-{% set version = "1.0.11" %}
+{% set version = "1.0.12" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-master-app-{{ version }}.tar.gz
-  sha256: 4a1ae839f5026d87552b7e9689c9845285463cddd8a826852763afaaec915d03
+  sha256: 0adcf9de9e8522888c7bfb69a00a7a93730a182080ab93844dd0a9fa97e0df3b
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - semi-ate-plugins
     - transitions
     - xmltodict
-
+    - pydantic
 test:
   imports:
     - ate_master_app
