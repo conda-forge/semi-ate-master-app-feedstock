@@ -1,5 +1,5 @@
 {% set name = "semi-ate-master-app" %}
-{% set version = "1.0.12" %}
+{% set version = "1.0.14" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/semi-ate-master-app-{{ version }}.tar.gz
-  sha256: 0adcf9de9e8522888c7bfb69a00a7a93730a182080ab93844dd0a9fa97e0df3b
+  sha256: 645d130bb5c1fc929ec51489fc31a39e0f0cb739864ddf298f4a9a311f4a7161
 
 build:
   number: 0
