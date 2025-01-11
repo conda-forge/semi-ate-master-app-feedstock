@@ -11,7 +11,7 @@ source:
   sha256: eadfd549532072f129b7b1a448829a0dc429470b7b9434fdc450250f36755e4d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - launch_master=ate_master_app.launch_master:main
@@ -20,10 +20,10 @@ build:
 requirements:
   host:
     - pip >=3.8
-    - python
+    - python {{ python_min }}
   run:
     - aiohttp ==3.7.4
-    - python >=3.8
+    - python >={{ python_min }}
     - semi-ate-apps-common
     - semi-ate-common
     - semi-ate-plugins
@@ -40,6 +40,7 @@ test:
     - launch_master --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/semi-ate-master-app/
